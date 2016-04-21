@@ -1,36 +1,59 @@
-# glas
-Glas - Rails on Ruby - Jekyll Theme 
-Preview: http://www.blog.lucasgatsas.ch 
+# Jekyll Cayman theme
 
-Clone to Desktop
-<code>git clone https://github.com/SpaceG/glas.git  </code>
-Delete the cname file. 
+This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+
+Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+
+You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+
+![](http://cl.ly/image/1T3r3d18311V/content)
+
+# How to use it?
+
+Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+
+Unzip it and use it as a regular jekyll folder.
+
+```
+$ unzip master.zip
+```
+
+Get inside the newly extracted folder
+```
+$ cd jekyll-cayman-theme
+```
+
+Get the required gems
+```
+$ bundle install
+```
+
+Use it!
+
+```
+$ jekyll serve
+```
+
+For more details read about [Jekyll][1] on its web page.
+
+# Setup
+
+Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
 
 
-<code>cd Desktop </code><br>
-<code>cd glas </code><br>
-<code>$ jekyll serve </code>
+## baseurl
 
-watch your localhost <code> 127.0.0.1:8080 </code> 
+`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-cayman-theme
 
-The MIT License (MIT)
+In the case above the baseurl should be set to "/jekyll-cayman-theme".
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+In the case the site sits in the root, you can leave `baseurl` as empty "".
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+# License
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
 
-
+[1]: http://jekyllrb.com/
+[2]: https://github.com/jasonlong
+[3]: http://pages.github.com/
+[4]: https://github.com/jasonlong/cayman-theme
