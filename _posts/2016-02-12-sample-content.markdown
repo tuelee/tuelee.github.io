@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Android动画"
+title:  "Android"
 date:   2016-04-21 17:50:00
 categories: main
 ---
