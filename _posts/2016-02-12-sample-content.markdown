@@ -5,9 +5,8 @@ date:   2016-02-12 17:50:00
 categories: main
 ---
 
-View Animation;  Drawable Animation; Property Animation
-
-1.View Animation:
+# Activity 动画
+## 1. View Animation:
 支持简单的缩放、平移、旋转、透明度基本的动画
 Interpolator :用于修改一个动画过程中的速率，可以定义各种各样的非线性变化函数，比如加速、减速等。
 View Animation不足
