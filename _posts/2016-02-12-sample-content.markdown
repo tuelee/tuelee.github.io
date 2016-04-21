@@ -15,6 +15,33 @@ View Animation不足
 功能简单，不支持背景颜色的动画
 只改变view的绘制效果，view的属性保持不变，比如缩放后，可点击区域还是原来的位置和大小。
 
+View Animation的使用：
+{% highlight ruby %}
+final Animation buttonAnimation = AnimationUtils.loadAnimation(
+				this.getContext(), R.anim.animation);
+{% endhighlight %}
+
+其中animation的配置文件为
+
+{% highlight ruby %}
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<scale android:fromXScale="1.0" android:toXScale="1.5" android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+		android:fromYScale="1.0" android:toYScale="1.5" android:pivotX="50%"
+		android:pivotY="50%" android:fillAfter="true" android:duration="5000" />
+	<set>
+		<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+			android:fromAlpha="0.2" android:toAlpha="1.0" android:duration="3000" />
+		<rotate android:fromDegrees="0" android:toDegrees="360"
+			android:toYScale="0.0" android:pivotX="50%" android:pivotY="50%"
+			android:startOffset="700" android:duration="4000" />
+		<translate android:fromXDelta="100%" android:toXDelta="00%"
+			android:fromYDelta="60%" android:toYDelta="00%" android:duration="3000"
+			android:zAdjustment="bottom" />
+	</set>
+</set>
+{% endhighlight %}
+
 2.Property animation:
 很强劲的动画框架，几乎可以为所有的事物加上动画效果;一个属性动画在某一个时间段，改变的是一个对象的一个属性值
 
@@ -25,14 +52,6 @@ View Animation不足
 如果操作对象的该属性方法里面，比如上例的setRotationX如果内部没有调用view的重绘，则你需要自己按照下面方式手动调用。
 2.2 Value animator
 ValueAnimator并没有在属性上做操作, 不需要操作的对象的属性一定要有getter和setter方法，可以自己根据当前动画的计算值，来操作任何属性
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
