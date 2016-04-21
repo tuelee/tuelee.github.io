@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Android动画"
-date:   2016-02-12 17:50:00
+title:  "Linux学习"
+date:   2016-04-21 17:50:00
 categories: main
 ---
 

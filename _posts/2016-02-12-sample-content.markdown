@@ -42,8 +42,16 @@ final Animation buttonAnimation = AnimationUtils.loadAnimation(
 {% endhighlight %}
 
 ## 2.Property animation:
+```
 很强劲的动画框架，几乎可以为所有的事物加上动画效果;一个属性动画在某一个时间段，改变的是一个对象的一个属性值
+```
 
+{% highlight ruby %}
+PropertyValuesHolder p1 = PropertyValuesHolder.ofFloat("translationX", 0, 60F);
+        PropertyValuesHolder p2 = PropertyValuesHolder.ofFloat("translationY", 0, 60F);
+        PropertyValuesHolder p3 = PropertyValuesHolder.ofFloat("rotation", 0, 60F);
+        ObjectAnimator.ofPropertyValuesHolder(view, p1, p2 ,p3).setDuration(1000).start();
+{% endhighlight %}
 
 ### 2.1 object animation:
 提供了ofInt、ofFloat、ofObject，这几个方法都是设置动画作用的元素、作用的属性、动画开始、结束、以及中间的任意个属性值。当对于属性值，只设置一个的时候，会认为当然对象该属性的值为开始（getPropName反射获取），然后设置的值为终点。如果设置两个，则一个为开始、一个为结束
