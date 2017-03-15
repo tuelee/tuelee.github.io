@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Android动画"
+title:  "Android动画学习总结"
 date:   2016-02-12 17:50:00
 categories: main
 ---
